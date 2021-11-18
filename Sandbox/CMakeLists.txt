@@ -1,12 +1,10 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(Fennec VERSION 0.1.0)
+project(FennecSandbox VERSION 0.1.0)
 
 set(CMAKE_CXX_STANDARD 14)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
 
-enable_testing()
-
-add_subdirectory(Fennec)
-add_subdirectory(Sandbox)
+add_subdirectory(src)
